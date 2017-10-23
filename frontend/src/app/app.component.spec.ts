@@ -12,7 +12,7 @@ import {
   ApiCardComponent,
   FooterComponent,
   GithubComponent,
-} from './component';
+} from './components';
 
 import {
   MdToolbarModule,
