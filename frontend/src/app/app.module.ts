@@ -66,13 +66,11 @@ import { ChartsModule } from 'ng2-charts/ng2-charts';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppComponent } from './app.component';
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './app-routing';
 import { HomeComponent } from './home';
 import { LoginComponent } from './login';
 import { LoginGuard, GuestGuard } from './guard';
 import { NotFoundComponent } from './not-found';
-import { AccountMenuComponent } from './components/header/account-menu/account-menu.component';
-
 
 import {
   ApiService,
@@ -93,8 +91,10 @@ export function initUserFactory(userService: UserService) {
     HomeComponent,
     LoginComponent,
     NotFoundComponent,
-    AccountMenuComponent,
-    ChangePasswordComponent
+    ChangePasswordComponent,
+    ...APP_CONTAINERS,
+    ...APP_COMPONENTS,
+    ...APP_DIRECTIVES
   ],
   imports: [
     BrowserAnimationsModule,

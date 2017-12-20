@@ -28,7 +28,7 @@ angular-spring-starter/frontend
  │   │   │   └──user.service.ts                                 * service for init user info and view user info
  │   │   │       ├──DeleteableModelRepository.java              * base repository that overwrites the findAll method.
  │   │   │       └──UserRepository.java
- │   │   ├──app-routing.module.ts                               * main router module
+ │   │   ├──app-routing.ts                               * main router module
  │   │   ├──app.component.*                                     * main app component
  │   │   └──app.module.ts                                       * mian app module
  │   ├──assets                                                  * static files, images etc.
