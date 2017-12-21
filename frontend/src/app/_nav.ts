@@ -19,17 +19,17 @@ export const navigation = [
     children: [
       {
         name: 'Aventureros',
-        url: '/clubes/aventureros',
+        url: '/dashboard/clubes/aventureros',
         icon: 'icon-puzzle'
       },
       {
         name: 'Conquistadores',
-        url: '/clubes/conquistadores',
+        url: '/dashboard/clubes/conquistadores',
         icon: 'icon-puzzle'
       },
       {
         name: 'Guías Mayores',
-        url: '/clubes/guias-mayores',
+        url: '/dashboard/clubes/guias-mayores',
         icon: 'icon-puzzle'
       }
     ]

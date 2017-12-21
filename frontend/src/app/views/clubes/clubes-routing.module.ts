@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 import { Routes,
      RouterModule } from '@angular/router';
 
-import { AventurerosComponent } from './aventureros.component';
-import { ConquistadoresComponent } from './conquistadores.component';
-import {GuiasMayoresComponent} from "./guias-mayores.component";
+import { AventurerosComponent } from './aventureros/aventureros.component';
+import { ConquistadoresComponent } from './conquistadores/conquistadores.component';
+import {GuiasMayoresComponent} from './guias-mayores/guias-mayores.component';
 
 const routes: Routes = [
   {

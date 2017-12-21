@@ -91,8 +91,13 @@ export class LoginComponent implements OnInit, OnDestroy {
     // show me the animation
     .delay(1000)
     .subscribe(data => {
-      this.userService.getMyInfo().subscribe();
-      this.router.navigate(['/dashboard']);
+      // this.userService.getMyInfo().subscribe();
+      // this.userService.initUser();
+        this.userService.getMyInfo().toPromise()
+          .then(user => {
+            this.router.navigate(['/dashboard']);
+          });
+
     },
     error => {
       this.submitted = false;
