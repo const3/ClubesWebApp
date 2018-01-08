@@ -121,6 +121,10 @@ export function initUserFactory(userService: UserService) {
       'useFactory': initUserFactory,
       'deps': [UserService],
       'multi': true
+    },
+    {
+      'provide': LocationStrategy,
+      'useClass': HashLocationStrategy
     }
   ],
   bootstrap: [AppComponent]
